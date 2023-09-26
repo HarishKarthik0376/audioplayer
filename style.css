@@ -144,7 +144,7 @@ body
     background-color: rgba(207, 118, 245, 0.5);
     border-radius: 10px;
     position: absolute;
-    left: 0%;
+    left: 2%;
     right: 2%;
     top: 20%;
     overflow-x: hidden;
@@ -178,5 +178,12 @@ body
     left: 41%;
     top: 72%;
     display: flex;
+}
+.title
+{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 10px;
 }
 }
