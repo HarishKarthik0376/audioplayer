@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c1b5d94c09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="section">
+        <div class="box">
+            <div class="musicicon" id="song1">
+                <img class="vikram" id="vikram" src="vikram.jpg" alt="vikram">
+                <audio  id="vikram1" src="vikram.mp3" style="display: none;"></audio>
+                <p class="title">Vikram Title Track</p>
+            </div>
+            <div class="musicicon" id="song2" style="display: none;">
+                <img class="vikram" id="chaleyaimg" src="c.jpg" alt="chaleya">
+                <audio  id="chaleya" src="Chaleya_320(PagalWorld.com.se).mp3" style="display: none;"></audio>
+                <p style="margin-left: 45px;" class="title">Chaleya</p>
+            </div>
+            <div class="musicicon" id="song3" style="display: none;">
+                <img class="vikram" id="closerimg" src="closer.jpg" alt="closer">
+                <audio  id="closer" src="Closer---The-Chainsmokers-ft.-Halsey-320(PagalWorld).mp3" style="display: none;"></audio>
+                <p style="margin-left: 45px;" class="title">Closer</p>
+            </div>
+            <div class="musicicon" id="song4" style="display: none;">
+                <img class="vikram" id="sodakkuimg" src="Sodakku-From-Thaanaa-Serndha-Koottam--Tamil-2017-20171026063708-500x500.jpg" alt="sodakku">
+                <audio  id="sodakku" src="Sodakku Mela Sodakku.mp3" style="display: none;"></audio>
+                <p class="title1">Sodakku Mela Sodakku</p>
+            </div>
+            <div class="ranger">
+                <input class="rang" id="rang" type="range">
+            </div>
+            <div class="buttons">
+                    <button class="play" id="play1"> <i class="fa-solid fa-play" style="color: #ffffff;"></i> </button>
+                    <button class="play" id="pause"style="display: none;"> <i class="fa-solid fa-pause" style="color: #ffffff;"></i> </button>
+                    <button class="forward" id="forward"><i class="fa-solid fa-forward" style="color: #ffffff;"></i></button>
+                    <button class="backward" id="backward"><i class="fa-solid fa-backward" style="color: #ffffff;"></i></button>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
