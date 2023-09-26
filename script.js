@@ -110,6 +110,10 @@ prog.addEventListener("click",function(){
     audio.currentTime = prog.value;
     audio.play();
 })
+prog.addEventListener("touchmove",function(){
+    audio.currentTime = prog.value;
+    audio.play();
+})
 
     
 
