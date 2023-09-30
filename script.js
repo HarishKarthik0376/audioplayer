@@ -3,6 +3,24 @@ var previous = 4;
 var next = 0;
 var audio = document.getElementById("vikram1");
 let prog = document.getElementById("rang");
+let search = document.getElementById("search");
+document.getElementById("add").addEventListener("click", function(){
+    const array = ["vikram1","chaleya","closer","sodakku"];
+    for(i=0;i<array.length;i++)
+    {
+        if(search.value==array[i])
+        { 
+                    audio = document.getElementById(array[i]);
+                    document.getElementById("box").style.display = "block"
+                    document.getElementById("box1").style.display = "none"
+                    document.getElementsByClassName("musicicon")[0].style.display = "none";
+                    document.getElementsByClassName("musicicon")[i].style.display = "block";
+                    document.getElementById("mainpage").style.display = "none"; 
+    } 
+    }
+})
+
+
 audio.onloadedmetadata = function(){
     prog.max=audio.duration;
     prog.value=audio.currentTime;
@@ -23,7 +41,6 @@ document.getElementById("play1").addEventListener("click",function(){
     {   audio.pause();
         document.getElementById("play1").style.display="block";
         document.getElementById("pause").style.display="none";
-        playing=0;
     }
     })
 })
@@ -107,13 +124,116 @@ document.getElementById("forward").addEventListener("click",function(){
 
 })
 prog.addEventListener("click",function(){
+    audio.pause();
     audio.currentTime = prog.value;
     audio.play();
+    document.getElementById("play1").style.display = "none";
+    document.getElementById("pause").style.display = "block";
+    document.querySelector("#pause").addEventListener("click",function(){
+        audio.pause();
+        document.getElementById("play1").style.display="block";
+        document.getElementById("pause").style.display="none";
+        playing=0;
+    })
+    
 })
 prog.addEventListener("touchmove",function(){
+    audio.pause();
     audio.currentTime = prog.value;
     audio.play();
+    document.getElementById("play1").style.display = "none";
+    document.getElementById("pause").style.display = "block";
+    document.querySelector("#pause").addEventListener("click",function(){
+        audio.pause();
+        document.getElementById("play1").style.display="block";
+        document.getElementById("pause").style.display="none";
+        playing=0;
+    })
+    
+})
+prog.addEventListener("touchend",function(){
+    audio.pause();
+    audio.currentTime = prog.value;
+    audio.play();
+    document.getElementById("play1").style.display = "none";
+    document.getElementById("pause").style.display = "block";
+    document.querySelector("#pause").addEventListener("click",function(){
+        audio.pause();
+        document.getElementById("play1").style.display="block";
+        document.getElementById("pause").style.display="none";
+        playing=0;
+    })
+   
 })
 
-    
+
+document.getElementById("playsong").addEventListener("click",function(){
+        document.getElementById("box1").style.display = "none";
+        document.getElementById("box").style.display = "block";
+        document.getElementById("song1").style.display = "block";
+        audio =  document.getElementById("vikram1");
+        document.getElementById("play1").style.display="block";
+        document.getElementById("pause").style.display="none";
+        console.log(audio);
+     
+        
+})
+document.getElementById("playsong1").addEventListener("click",function(){
+        document.getElementById("box1").style.display = "none";
+        document.getElementById("box").style.display = "block";
+        document.getElementById("box").style.display = "block";
+        document.getElementById("song2").style.display = "block";
+        audio =  document.getElementById("chaleya");
+        document.getElementById("play1").style.display="block";
+        document.getElementById("pause").style.display="none";
+        console.log(audio);
+
+})
+document.getElementById("playsong2").addEventListener("click",function(){
+        document.getElementById("box1").style.display = "none";
+        document.getElementById("box").style.display = "block";
+        document.getElementById("box").style.display = "block";
+        document.getElementById("song3").style.display = "block";
+        audio =  document.getElementById("closer");
+        document.getElementById("play1").style.display="block";
+        document.getElementById("pause").style.display="none";
+        console.log(audio);
+   
+})
+document.getElementById("playsong3").addEventListener("click",function(){
+        document.getElementById("box1").style.display = "none";
+        document.getElementById("box").style.display = "block";
+        document.getElementById("box").style.display = "block";
+        document.getElementById("song4").style.display = "block";
+        audio =  document.getElementById("sodakku");
+        document.getElementById("play1").style.display="block";
+        document.getElementById("pause").style.display="none";
+        console.log(audio);
+
+        
+})
+document.getElementById("goback").addEventListener("click",function(){
+    audio.pause();
+    audio.currentTime = 0;
+    audio=0;
+    playing=0;
+    document.getElementById("box").style.display = "none";
+    document.getElementById("song1").style.display="none"
+    document.getElementById("song2").style.display="none"
+    document.getElementById("song3").style.display="none"
+    document.getElementById("song4").style.display="none"
+    document.getElementById("box1").style.display = "block";
+    document.getElementById("allsongs").style.display = "block";
+    console.log(audio);
+})
+document.getElementById("available").addEventListener("click",function(){
+    document.getElementById("mainpage").style.display = "none";
+    document.getElementById("allsongs").style.display = "block";
+})
+document.getElementById("goback1").addEventListener("click",function(){
+    document.getElementById("allsongs").style.display = "none";
+    document.getElementById("mainpage").style.display = "block";
+    search.value="";
+})
+
 
