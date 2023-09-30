@@ -23,6 +23,16 @@ body
     left: 39%;
     top: 20%;
 }
+.box1
+{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(207, 118, 245, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    left: 39%;
+    top: 20%;
+}
 .musicicon
 {
     width: 160px;
@@ -105,9 +115,9 @@ body
     margin-left: -10px;
 }
 .ranger
-{   width: 300px;
+{   width: 270px;
     position: absolute;
-    left: 14%;
+    left: 16%;
     top: 62%;
 }
 .rang{
@@ -128,6 +138,195 @@ body
     border: 7px solid white;
     cursor: pointer;
 }
+.sec
+{
+    width: 96%;
+    margin-left: 5px;
+    height: 50px;
+    margin-top: 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vik
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+   position: relative;
+   right: 5%;
+}
+.vik1
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+   position: relative;
+   right: 14%;
+}
+.vik2
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+   position: relative;
+   right: 15%;
+}
+.vik3
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+   position: relative;
+   right: 5%;
+}
+.allsongstxt
+{
+    position: relative;
+   right: 4%;
+   font-weight: 700;
+   color: white;
+   font-size: 0.9rem;
+}
+.allsongstxt1
+{
+    position: relative;
+   right: 13%;
+   font-weight: 700;
+   color: white;
+   font-size: 0.9rem;
+}
+.allsongstxt2
+{
+    position: relative;
+   right: 3%;
+   font-weight: 700;
+   color: white;
+   font-size: 0.8rem;
+}
+.playsong
+{   position: relative;
+    left: 1%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightpink;
+    border: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.playsong1
+{
+    position: relative;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightpink;
+    border: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.playsong2
+{
+    position: relative;
+    left: 11%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightpink;
+    border: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.goback
+{
+    width: 30px;
+    height: 30px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: rgba(207, 118, 245, 0.5);
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 450ms;
+    color: white;
+}
+.goback:hover{
+    color: black;
+    background-color: white;
+    border: 4px solid black;
+    transform: scale(1.08);
+}
+.searchbar
+{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+.search
+{
+    width: 210px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid black;
+}
+.add
+{   position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 99%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 1.2rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid black;
+    transition: 450ms;
+}
+.add:hover{
+    transform: scale(1.08);
+}
+.or{
+    position: absolute;
+    left: 39%;
+    top: 40%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 5px 2px 2px rgba(207, 118, 245, 0.5);
+}
+
+.available
+{
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+    left: 34%;
+    top: 67%;
+    background-color: white;
+    border: 2px solid black;
+    transition: 450ms;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.available:hover{
+    transform: scale(1.08);
+    background-color: rgba(207, 118, 245, 0.5);
+    border: 2px solid white;
+}
 @media  screen and (max-width:500px) {
     body{
         overflow: hidden;
@@ -138,6 +337,18 @@ body
     height: 400px;
 }
 .box
+{
+    width: 413px;
+    height: 400px;
+    background-color: rgba(207, 118, 245, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 20%;
+    overflow-x: hidden;
+}
+.box1
 {
     width: 413px;
     height: 400px;
