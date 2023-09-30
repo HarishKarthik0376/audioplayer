@@ -9,8 +9,9 @@
 </head>
 <body>
     <div class="section">
-        <div class="box">
-            <div class="musicicon" id="song1">
+        <div class="box" id="box" style="display: none;">
+            <button class="goback" id="goback"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="musicicon" id="song1" style="display: none;">
                 <img class="vikram" id="vikram" src="vikram.jpg" alt="vikram">
                 <audio  id="vikram1" src="vikram.mp3" style="display: none;"></audio>
                 <p class="title">Vikram Title Track</p>
@@ -40,6 +41,43 @@
                     <button class="backward" id="backward"><i class="fa-solid fa-backward" style="color: #ffffff;"></i></button>
                 </div>
         </div>
+        <div class="box1" id="box1">
+        <div class="allsongs" id="allsongs" style="display: none;">
+            <button class="goback" id="goback1"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="sec">
+                <img src="vikram.jpg" alt="virkam" id="vik" class="vik">
+                <p class="allsongstxt">Vikram Title Track - Anirudh Ravichandar</p>
+                <audio src="vikram.mp3" id="vikram1" style="display: none;"></audio>
+                <button class="playsong one" id="playsong"><i class="fa-solid fa-play" style="color: #ffffff;"></i></button>
+            </div>
+            <div class="sec">
+                <img src="c.jpg" id="cha" class="vik1">
+                <p class="allsongstxt1">Chaleya - Anirudh Ravichandar</p>
+                <audio src="Chaleya_320(PagalWorld.com.se).mp3" id="chaleya" style="display: none;"></audio>
+                <button class="playsong1 two" id="playsong1"><i class="fa-solid fa-play" style="color: #ffffff;"></i></button>
+            </div>
+            <div class="sec">
+                <img src="closer.jpg" alt="virkam" id="clo" class="vik2">
+                <p class="allsongstxt1">Closer - Chainsomkers,Halsey</p>
+                <audio src="Closer---The-Chainsmokers-ft.-Halsey-320(PagalWorld).mp3" id="closer style=" style="display: none;"></audio>
+                <button class="playsong2 three" id="playsong2"><i class="fa-solid fa-play" style="color: #ffffff;"></i></button>
+            </div>
+            <div class="sec">
+                <img src="Sodakku-From-Thaanaa-Serndha-Koottam--Tamil-2017-20171026063708-500x500.jpg" alt="virkam" id="sok" class="vik3">
+                <p class="allsongstxt2">Sodakku Mela Sodakku - Anirudh Ravichandar</p>
+                <audio src="Sodakku Mela Sodakku.mp3" id="sodk" style="display: none;"></audio>
+                <button class="playsong four" id="playsong3"><i class="fa-solid fa-play" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+        <div class="mainpage" id="mainpage">
+            <div class="searchbar">
+                <input type="text" class="search" id="search" placeholder="Enter Song Name">
+                <button class="add" id="add"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <p class="or" id="or">OR</p>
+            <button class="available" id="available">Available Songs</button>
+        </div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
