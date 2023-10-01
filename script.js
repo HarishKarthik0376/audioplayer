@@ -223,6 +223,7 @@ document.getElementById("playsong3").addEventListener("click",function(){
         
 })
 document.getElementById("goback").addEventListener("click",function(){
+    audio.pause();
     audio.currentTime = 0;
     audio=0;
     playing=0;
