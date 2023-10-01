@@ -5,19 +5,22 @@ var audio = document.getElementById("vikram1");
 let prog = document.getElementById("rang");
 let search = document.getElementById("search");
 document.getElementById("add").addEventListener("click", function(){
-    const array = ["vikram1","chaleya","closer","sodakku","Vikram","Chaleya","Closer","Sodakku"];
+    const array = ["vikram1","chaleya","closer","sodakku"];
     for(i=0;i<array.length;i++)
-    {
+    { 
         if(array[i].includes(search.value))
-        { 
-                    audio = document.getElementById(array[i]);
+               
+            {       audio = document.getElementById(array[i]);
                     document.getElementById("box").style.display = "block"
                     document.getElementById("box1").style.display = "none"
                     document.getElementsByClassName("musicicon")[0].style.display = "none";
                     document.getElementsByClassName("musicicon")[i].style.display = "block";
                     document.getElementById("mainpage").style.display = "none"; 
+                }
     } 
-    }
+console.log(array);
+   
+   
 })
 
 
@@ -220,7 +223,6 @@ document.getElementById("playsong3").addEventListener("click",function(){
         
 })
 document.getElementById("goback").addEventListener("click",function(){
-    audio.pause();
     audio.currentTime = 0;
     audio=0;
     playing=0;
