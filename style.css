@@ -398,4 +398,36 @@ body
     margin-top: 10px;
     margin-left: 15px;
 }
+.vik
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+   position: relative;
+   right: 4%;
+}
+.vik1
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+   position: relative;
+   right: 13.5%;
+}
+.vik2
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+   position: relative;
+   right: 14.5%;
+}
+.vik3
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+   position: relative;
+   right: 4.5%;
+}
 }
