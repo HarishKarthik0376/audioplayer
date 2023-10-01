@@ -5,10 +5,10 @@ var audio = document.getElementById("vikram1");
 let prog = document.getElementById("rang");
 let search = document.getElementById("search");
 document.getElementById("add").addEventListener("click", function(){
-    const array = ["vikram1","chaleya","closer","sodakku"];
+    const array = ["vikram1","chaleya","closer","sodakku","Vikram","Chaleya","Closer","Sodakku"];
     for(i=0;i<array.length;i++)
     {
-        if(search.value==array[i])
+        if(array[i].includes(search.value))
         { 
                     audio = document.getElementById(array[i]);
                     document.getElementById("box").style.display = "block"
@@ -175,6 +175,7 @@ document.getElementById("playsong").addEventListener("click",function(){
         document.getElementById("play1").style.display="block";
         document.getElementById("pause").style.display="none";
         console.log(audio);
+        next = 0;
      
         
 })
@@ -187,6 +188,8 @@ document.getElementById("playsong1").addEventListener("click",function(){
         document.getElementById("play1").style.display="block";
         document.getElementById("pause").style.display="none";
         console.log(audio);
+        next = 1;
+        previous = 4;
 
 })
 document.getElementById("playsong2").addEventListener("click",function(){
@@ -198,6 +201,8 @@ document.getElementById("playsong2").addEventListener("click",function(){
         document.getElementById("play1").style.display="block";
         document.getElementById("pause").style.display="none";
         console.log(audio);
+        next = 2;
+        previous = 3;
    
 })
 document.getElementById("playsong3").addEventListener("click",function(){
@@ -209,6 +214,8 @@ document.getElementById("playsong3").addEventListener("click",function(){
         document.getElementById("play1").style.display="block";
         document.getElementById("pause").style.display="none";
         console.log(audio);
+        next = 3;
+        previous = 2;
 
         
 })
